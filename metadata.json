@@ -1,0 +1,6 @@
+{
+  "name": "PDF Text Extractor",
+  "description": "An efficient tool to extract and copy text from any PDF document using Gemini AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
