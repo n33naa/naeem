@@ -4,7 +4,9 @@ const apiKey = process.env.GEMINI_API_KEY;
 
 export function getAi() {
   if (!apiKey) {
-    throw new Error("GEMINI_API_KEY is not defined");
+    throw new Error(
+      "GEMINI_API_KEY is missing. If you've deployed this app, make sure to add it to your environment variables (e.g., GitHub Secrets, Vercel/Netlify Env Vars)."
+    );
   }
   return new GoogleGenAI({ apiKey });
 }
